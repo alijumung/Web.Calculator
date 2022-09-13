@@ -1,0 +1,65 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+button{
+  border: none;
+  border-radius: 10px;
+  width: 17px;
+  height: 20px;
+  margin: 5px;
+  background-color: #1c1a22;
+  color: #FFFF;
+  transition: box-shadow 0.15s, width 0.15s, height 0.15s; 
+}
+button:hover{
+  box-shadow: rgba(114, 32, 177, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+button:active{
+  width: 15px;
+  height: 17px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #4d465e;
+  padding-top: 6px;
+  padding-left: 2px;
+  padding-right: 2px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.display input{
+  padding-left: 4px;
+  padding-right: 4px;
+  width: 100px;
+  height: 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #2e2a38;
+  color: #FFFF;
+}
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+	background: linear-gradient(-45deg, #dbd8e3, #5c5470, #352f44, #2a2438);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
